@@ -24,7 +24,7 @@ jobs:
                 pnpm install --no-frozen-lockfile
                 pnpm build
             - name: copy file to server
-              uses: appleboy/scp-action@prod
+              uses: appleboy/scp-action@master
               with:
                 host: ${{secrets.PROD_HOST}}
                 username: ${{secrets.SSH_USER_NAME}}
